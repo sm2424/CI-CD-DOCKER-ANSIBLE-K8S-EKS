@@ -2,7 +2,6 @@
 pipeline {
 
   agent any
-  
   parameters {
 	choice(name: 'action', choices: 'create\nrollback', description: 'Create/rollback of the deployment')
     string(name: 'ImageName', description: "Name of the docker build")
